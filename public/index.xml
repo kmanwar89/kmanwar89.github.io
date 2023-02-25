@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kadar Anwar</title>
+    <link>https://kadaranwar.com/</link>
+    <description>Recent content on Kadar Anwar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kadaranwar.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://kadaranwar.com/about/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kadaranwar.com/about/</guid>
+      <description>Hi there! My name is Kadar (pronounced like &amp;lsquo;Cotter&amp;rsquo;), and I currently work as an Enterprise Network Engineer at Cisco.
+I made this website to capture my thoughts and document/showcase various projects that I&amp;rsquo;m working on.
+ I am a Linux and FOSS evangelist - I love supporting open source projects and continue to develop my programming skills to contribute to these projects one day soon. I have a bit of experience in HTML/CSS, JavaScript, VisualBasic (who remembers that?</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://kadaranwar.com/posts/2023/02/introduction/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kadaranwar.com/posts/2023/02/introduction/</guid>
+      <description>In March of 2021, during some rare downtime on a weekend between errands, chores and housework, I was using GNS3 to study some Ansible network programmability concepts on Udemy. While following David Bombal&amp;rsquo;s Ansible for Network Engineers course, I ran into some issues with the &amp;ldquo;network automation&amp;rdquo; VM that is provided in GNS3.
+This lead into a rabbit hole of discovery - Docker images, containers, docker-compose and, eventually, lead me to my current journey of self-hosting dozens of microservices from my home.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://kadaranwar.com/resume/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kadaranwar.com/resume/</guid>
+      <description>Providing my resume here is not an invitation or request for unsolicited messages. I have no interest in short term, contract, month-to-month, H-1B visa, overnight, 3rd shift or any other positions that do not align with my skillset, and I will not engage with solicitations for these positions.
+Source code • Download / View in Browser
+  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+    </item>
+    
+  </channel>
+</rss>
