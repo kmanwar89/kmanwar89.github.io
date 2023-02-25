@@ -1,7 +1,7 @@
 ---
 title: "Dogs"
 date: 2023-02-24T21:53:09-05:00
-draft: false
+draft: true
 toc: true
 images:
 tags:
