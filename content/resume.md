@@ -1,8 +1,8 @@
-+++
-title = "Resume"
-date = "2023-02-22"
-aliases = ["resume"]
-+++
+---
+title: "Resume"
+aliases: "resume"
+draft: false
+---
 
 Providing my resume here is not an invitation or request for unsolicited messages. I have no interest in short term, contract, month-to-month, H-1B visa, overnight, 3rd shift or any other positions that do not align with my skillset, and I will not engage with solicitations for these positions.
 

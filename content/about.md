@@ -1,8 +1,8 @@
-+++
-title   = "About Me"
-date    = "2023-02-22"
-aliases = ["about-me", "me", "contact"]
-+++
+---
+title: "About Me"
+date: 2023-02-24T22:22:08-05:00
+draft: false
+---
 
 Hi there! My name is Kadar (pronounced like 'Cotter'), and I currently work as an Enterprise Network Engineer at Cisco.
 
@@ -23,3 +23,7 @@ Some of my other hobbies include training my awesome dogs Shadow and Luke (Skywa
 ---
 
 I am also passionate about animal welfare, and spend several hours a month volunteering for the awesome [Animal Protection Society of Durham](http://www.apsofdurham.org). There are many awesome, loving dogs in need of a home. In addition to office/front desk work, I work in a webmaster role to update the status of adoptable dogs and post newly-available dogs for adoption.
+
+---
+
+*ALL OPINIONS EXPRESSED ON THIS WEBSITE ARE PURELY MY OWN, AND ARE NOT AFFILIATED WITH ANY PAST, PRESENT OR FUTURE COMPANY, EMPLOYER, EDUCATIONAL INSTUTITION OR ANY OTHER AFFILIATION.*
