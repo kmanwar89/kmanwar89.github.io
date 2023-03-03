@@ -2,7 +2,7 @@ baseURL      = "https://kadaranwar.com"
 title        = "Kadar Anwar"
 languageCode = "en-us"
 theme        = ["hello-friend-ng", "hugo-embed-pdf-shortcode"]
-#description  = "My 127.0.0.1 on the Internet"
+description  = "My 127.0.0.1 on the Internet"
 
 PygmentsCodeFences = true
 PygmentsStyle      = "monokai"
@@ -193,7 +193,6 @@ disableHugoGeneratorInject = false
     name       = "Wiki"
     identifier = "wiki"
     url        = "https://wiki.kadaranwar.com"
-    target     = "_blank"
     weight     = 4
 
 [server]
