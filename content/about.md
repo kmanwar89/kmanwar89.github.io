@@ -4,7 +4,7 @@ date: 2023-02-24T22:22:08-05:00
 draft: false
 ---
 
-Hi there! My name is Kadar (pronounced like 'Cotter'), and I currently work as an Enterprise Network Engineer at Cisco.
+Hi there! My name is Kadar (pronounced like 'Cotter'), and I currently work as a Technical Systems Engineer at Cisco, specifically as the lead engineer for the IT-managed Linux@Cisco offering for internal employees.
 
 I made this website to capture my thoughts and document/showcase various projects that I'm working on.
 

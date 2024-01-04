@@ -179,21 +179,21 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
     weight     = 1
-  [[menu.main]]
-    identifier = "resume"
-    name       = "Resume"
-    url        = "resume/"
-    weight     = 3
+#  [[menu.main]]
+#    identifier = "resume"
+#    name       = "Resume"
+#    url        = "resume/"
+#    weight     = 3
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
     weight     = 2
-  [[menu.main]]
-    name       = "Wiki"
-    identifier = "wiki"
-    url        = "https://wiki.kadaranwar.com"
-    weight     = 4
+#  [[menu.main]]
+#    name       = "Wiki"
+#    identifier = "wiki"
+#    url        = "https://wiki.kadaranwar.com"
+#    weight     = 4
 
 [server]
   [[server.headers]]
