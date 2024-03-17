@@ -1,0 +1,55 @@
+---
+title: "TryHackMe - Easy CTF"
+description: "Adventures in TryHackMe"
+draft: true
+toc: true
+images:
+tags:
+  - ["tryhackme, thm, ctf, easy_ctf, try_hack_me"]
+---
+Hooked.
+
+That describes my first ever successful completion of a capture-the-flag challenge through TryHackme. All those years of acquiring random tidbits of knowledge and knowing "just enough" about a topic finally culminated in actually stringing everything together to get to an end goal - a privileged shell and several "flags" to prove I'd "pwned" the machine.
+
+This is a quick walkthrough/brain dump of how I accomplished this (with a good bit of help from THM volunteers through the WGU Cyber Club):
+
+1) Start the AttackBox after joining the room at tryhackme.com/room/easyctf
+2) Close the initial terminal that opens (with rainbow text)
+3) There's not a ton of data, but the first question is about running ports under 1000. Ports = network, so nmap is a starting point.  `nmap -sV -vv <ip of active machine>` will reveal running services & ports.
+
+    a) Answer: There should be **2** ports under 1000 in this list - 80 (http) and 21 (ftp)
+
+4) Next question, what's running on the higher port? higher port here means the only other port that's open, 2222
+
+    a) Answer: SSH
+
+5) What's the CVE being used? Well, before we get there, we have to figure out what the machine is. So we know port 80 is open, so navigate to http://10.10.135.33 in a browser. What shows up is an apache default page. No bueno. Let's dig deeper...
+
+    We can now use a tool called "gobuster" to try several hundred combinations of directories to figure out what else is on this machine.
+
+    Issue `gobuster dir -u http://<ip of machine> -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-small-words.txt`
+
+    The result here
+
+
+
+Synopsis:
+- nmap to get service quantity and types
+- dirbuster to figure out service running to get CVE after researching
+    - /. is a 200 code, /simple is a 301, so this is our main target
+- vulnerability is sqlinjection (sqli)
+- password is cracked by running an exploit code found on [Github](https://github.com/cyberchiranjit/CMSMadeSimplePython3) that has converted the [original exploit code](https://www.exploit-db.com/exploits/46635) over to Python3
+    - after a few minutes, a username, email and password will be displayed. the password is just `secret` with a login name of `mitch`v
+- with these credentials, it unlocks `ssh` access as the next answer
+- to get the user flag, ssh to this machine (in my case, `ssh -p 2222 mitch@10.10.135.33`) using the secret just found out. This will login as user mitch.
+    - a quick `ls` and `pwd` will get your bearings straight, and you'll see a file named `user.txt`.
+    - This has the first flag text, `G00d j0b, keep up!`
+- Next, we're asked to find other user accounts. Two ways to do this:
+    - I did a `cat /etc/passwd` to find users with uid 1000
+    - Can also do a simpler one and simply `cd ..` to move up one directory from the user mitch's home directory. an `ls` will display another user's home folder, `sunbath`, which is the next answer.
+- Next up, privilege escalation. For this one, we have to reference [GTFObins](https://gtfobins.github.io/), which allows us to learn how to use Unix binaries for privilege escalation.
+    - We can figure out what we're allowed to run as user `mitch` by issuing `sudo -l`, which shows we can run `vim` as root without a password prompt (which is the answer to the next question)
+    - From GTFObins, we can use the command `sudo vim -c ':!/bin/sh'` to execute a privilege shell.
+- Once in the privilege shell, press enter a few times to get to a clean newline, and type `ls`. The root user's 'flag' is in the `/root` directory as the `root.txt` file.
+
+And, that's it!
